@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StaffViewController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +17,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+// BREZEE AUTHENTICATION 
 // Route::get('/', function () {
-//     return view('home');
+//     return view('welcome');   
 // });
 
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::view('/', 'welcome');
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
+
+// require __DIR__.'/auth.php';
+
+
+Route::get('/', function () {
+    return view('login');   
+});
+
+// Route::get('/test', function () {
+//     return view('modal_view_staff');   
+// });
+
+Route::get('/staff', [StaffViewController::class, 'index']);
