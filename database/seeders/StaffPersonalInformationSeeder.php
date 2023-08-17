@@ -6,7 +6,7 @@ use App\Models\StaffModelPersonalInformation;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class StaffPersonalInformation extends Seeder
+class StaffPersonalInformationSeeder extends Seeder
 {
     /**
      * Run the database seeds.

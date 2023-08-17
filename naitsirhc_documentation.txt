@@ -1,0 +1,60 @@
+*SERVER
+php artisan serve
+
+*MIGRATIONS
+//MIGRATE ALL
+php artisan migrate
+
+//MIGRATE SPECIFIC FILE (JUST COPY PASTE LINE BY LINE OR COPY ALL LINES)
+php artisan migrate --path=database/migrations/2023_03_28_025344_tbl_unifast_staff_main_information.php
+php artisan migrate --path=database/migrations/2023_05_16_015919_tbl_unifast_staff_personal_information.php
+php artisan migrate --path=database/migrations/2023_05_16_021105_tbl_unifast_staff_family_background.php
+php artisan migrate --path=database/migrations/2023_05_16_021635_tbl_unifast_staff_name_of_children.php
+php artisan migrate --path=database/migrations/2023_05_16_021119_tbl_unifast_staff_educational_background.php
+php artisan migrate --path=database/migrations/2023_05_16_021128_tbl_unifast_staff_service_eligibility.php
+php artisan migrate --path=database/migrations/2023_05_16_021137_tbl_unifast_staff_work_experience.php
+php artisan migrate --path=database/migrations/2023_05_16_021206_tbl_unifast_staff_tap_attended.php
+php artisan migrate --path=database/migrations/2023_05_16_022945_tbl_unifast_staff_oi_special_skills_and_hobbies.php
+php artisan migrate --path=database/migrations/2023_05_16_023020_tbl_unifast_staff_oi_distinction_or_recognition.php
+php artisan migrate --path=database/migrations/2023_05_16_023038_tbl_unifast_staff_oi_association_or_organization.php
+
+REVERSE
+//ROLLBACK PREVIOUS MIGRATIONS
+php artisan migrate:rollback 
+
+//ROLLBACK SPECIFIC MIGRATIONS
+php artisan migrate:rollback --path=database/migrations/2023_05_16_021137_tbl_unifast_staff_work_experience.php
+
+
+*SEEDERS
+CREATE
+php artisan make:seed StaffMainInformationSeeder
+php artisan make:seed StaffPersonalInformationSeeder
+php artisan make:seed StaffFamilyBackgroundSeeder
+php artisan make:seed StaffNameOfChildrenSeeder
+php artisan make:seed StaffEducationalBackgroundSeeder
+php artisan make:seed StaffServiceEligibilitySeeder
+php artisan make:seed StaffWorkExperienceSeeder
+php artisan make:seed StaffTPAttendedSeeder
+php artisan make:seed StaffSpecialSkillsAndHobbiesSeeder
+php artisan make:seed StaffDistinctionOrRecognitionSeeder
+php artisan make:seed StaffAssociationOrOrganizationSeeder
+
+RUN
+php artisan db:seed --class=StaffMainInformationSeeder
+php artisan db:seed --class=StaffPersonalInformationSeeder
+php artisan db:seed --class=StaffFamilyBackgroundSeeder
+php artisan db:seed --class=StaffNameOfChildrenSeeder
+php artisan db:seed --class=StaffEducationalBackgroundSeeder
+php artisan db:seed --class=StaffServiceEligibilitySeeder
+php artisan db:seed --class=StaffWorkExperienceSeeder
+php artisan db:seed --class=StaffTPAttendedSeeder
+php artisan db:seed --class=StaffSpecialSkillsAndHobbiesSeeder
+php artisan db:seed --class=StaffDistinctionOrRecognitionSeeder
+php artisan db:seed --class=StaffAssociationOrOrganizationSeeder
+
+
+*MODELS
+php artisan make:model ModelName
+
+
