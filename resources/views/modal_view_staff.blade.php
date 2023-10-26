@@ -1,8 +1,12 @@
 @extends('layouts.my_layout')
 
 @section('content')
+
     <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal_view_staff"><i
             class="bi bi-eye"></i></button>
+
+
+            
     <div class="modal fade" id="modal_view_staff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -11,13 +15,11 @@
                         alt="" width="160" height="150" class="">
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <p class="lh-sm align-self-center">
-                        <label class="fw-bold fs-5">{{ $staff_main_info->first_name }} {{ $staff_main_info->middle_name }}
-                            {{ $staff_main_info->last_name }}</label> <br>
-                        <label class="fs-6">{{ $staff_main_info->unifast_office }}</label> <br>
-                        <label class="fs-6">{{ $staff_main_info->unit }}</label> <br>
-                        <label class="fs-6">{{ $staff_main_info->designation }} -
-                            {{ $staff_main_info->employment_type }}</label> <br>
-                        <label class="fs-6">{{ $staff_main_info->id_no }}</label> <br>
+                        <label class="fw-bold fs-5">sample</label> <br>
+                        <label class="fs-6">sample</label> <br>
+                        <label class="fs-6">sample</label> <br>
+                        <label class="fs-6">sample</label> <br>
+                        <label class="fs-6">sample</label> <br>
                     </p>
 
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -55,78 +57,78 @@
                                 <div class="row">
                                     <div class="col-4"><label>Date of Birth:</label></div>
                                     <div class="col-7">
-                                        <label>{{ date('F d, Y', strtotime($staff_main_info->date_of_birth)) }}</label>
+                                        <label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Place of Birth:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->place_of_birth }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Gender:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->gender }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Civil Status:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->civil_status }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Height (m):</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->height }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Weight (kg):</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->weight }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Blood Type:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->blood_type }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>GSIS No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->gsis_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>PAGIBIG No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->pagibig_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>PHILHEALTH No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->philhealth_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>SSS No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->sss_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>TIN No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->tin_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Citizenship:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->citizenship }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Residential Address:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->residential_address }}</label>
+                                    <div class="col-7"><label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Permanent Address:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->permanent_address }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Telephone No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->telephone_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Mobile No:</label></div>
-                                    <div class="col-7"><label>{{ $staff_main_info->mobile_no }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Email Address:</label></div>
                                     <div class="col-7">
-                                        <label>{{ $staff_main_info->email_address }}</label>
+                                        <label>sample</label>
                                     </div>
                                 </div>
                             </div>
@@ -137,29 +139,29 @@
                             <div class="border p-2">
                                 <div class="row">
                                     <div class="col-4"><label>Spouse Name:</label></div>
-                                    <div class="col-7"><label>{{ $staff_family_background->spouse_name }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Occupation:</label></div>
-                                    <div class="col-7"><label>{{ $staff_family_background->spouse_occupation }}</label>
+                                    <div class="col-7"><label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Employer/Business Name:</label></div>
                                     <div class="col-7">
-                                        <label>{{ $staff_family_background->spouse_employer_or_business }}</label>
+                                        <label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Business Address:</label></div>
                                     <div class="col-7">
-                                        <label>{{ $staff_family_background->spouse_employer_or_business_address }}</label>
+                                        <label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Contact Number:</label></div>
                                     <div class="col-7">
-                                        <label>{{ $staff_family_background->spouse_contact_number }}</label>
+                                        <label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -168,11 +170,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Fathers Name:</label></div>
-                                    <div class="col-7"><label>{{ $staff_family_background->fathers_name }}</label></div>
+                                    <div class="col-7"><label>sample</label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4"><label>Mothers Maiden Name:</label></div>
-                                    <div class="col-7"><label>{{ $staff_family_background->mothers_maiden_name }}</label>
+                                    <div class="col-7"><label>sample</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -189,12 +191,9 @@
                                                 <th>Full name</th>
                                                 <th>Date of Birth</th>
                                             </tr>
-                                            @foreach ($staff_name_of_children as $row)
                                                 <tr>
-                                                    <td>{{ $row->full_name }}</td>
-                                                    <td>{{ $row->date_of_birth }}</td>
+                                                    sample
                                                 </tr>
-                                            @endforeach
 
                                         </table>
                                     </div>
@@ -213,16 +212,13 @@
                                         <th style="font-size:14px; text-align:center">Yr. Graduated</th>
                                         <th style="font-size:14px; text-align:center">Scholarship/ Academic Honors</th>
                                     </tr>
-                                    @foreach ($staff_educational_background as $row)
-                                        <tr>
-                                            <td style="text-align:center">{{ $row->level }}</td>
-                                            <td style="text-align:center">{{ $row->school_name }}</td>
-                                            <td style="text-align:center">{{ $row->degree_or_course }}</td>
-                                            <td style="text-align:center">{{ $row->highest_level_or_units_earned }}</td>
-                                            <td style="text-align:center">{{ $row->year_graduated }}</td>
-                                            <td style="text-align:center">{{ $row->scholarship_or_academic_honors }}</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
                                         </tr>
-                                    @endforeach
                                 </table>
                             </div>
                         </div>
@@ -237,16 +233,14 @@
                                         <th style="font-size:14px; text-align:center">License No</th>
                                         <th style="font-size:14px; text-align:center">Date of Validity</th>
                                     </tr>
-                                    @foreach ($staff_service_eligibility as $row)
                                         <tr>
-                                            <td style="text-align:center">{{ $row->eligibility }}</td>
-                                            <td style="text-align:center">{{ $row->rating }}</td>
-                                            <td style="text-align:center">{{ $row->date_of_examination }}</td>
-                                            <td style="text-align:center">{{ $row->place_of_examination }}</td>
-                                            <td style="text-align:center">{{ $row->license_no }}</td>
-                                            <td style="text-align:center">{{ $row->date_of_validity }}</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
                                         </tr>
-                                    @endforeach
                                 </table>
                             </div>
                         </div>
@@ -262,17 +256,15 @@
                                         <th style="font-size:14px; text-align:center">Status of Appointment</th>
                                         <th style="font-size:14px; text-align:center">Gov Service?</th>
                                     </tr>
-                                    @foreach ($staff_work_experience as $row)
                                         <tr>
-                                            <td style="text-align:center">{{ $row->from }}</td>
-                                            <td style="text-align:center">{{ $row->to }}</td>
-                                            <td style="text-align:center">{{ $row->position_title }}</td>
-                                            <td style="text-align:center">{{ $row->company_or_agency }}</td>
-                                            <td style="text-align:center">P{{ $row->monthly_salary }}</td>
-                                            <td style="text-align:center">{{ $row->status_of_appointment }}</td>
-                                            <td style="text-align:center">{{ $row->is_government_service }}</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sample</td>
+                                            <td style="text-align:center">sampl</td>
                                         </tr>
-                                    @endforeach
                                 </table>
                             </div>
                         </div>
@@ -288,18 +280,16 @@
                                         <th style="font-size:14px; text-align:center">Type</th>
                                         <th style="font-size:14px; text-align:center">Conducted/Sponsored By</th>
                                     </tr>
-                                    @foreach ($staff_tp_attended as $row)
                                         <tr>
                                             <td style="font-size:14px; text-align:center">
-                                                {{ $row->training_or_program_title }}</td>
-                                            <td style="font-size:14px; text-align:center">{{ $row->from }}</td>
-                                            <td style="font-size:14px; text-align:center">{{ $row->to }}</td>
-                                            <td style="font-size:14px; text-align:center">{{ $row->no_of_hours }}</td>
-                                            <td style="font-size:14px; text-align:center">{{ $row->type }}</td>
+                                                sample</td>
+                                            <td style="font-size:14px; text-align:center">sample</td>
+                                            <td style="font-size:14px; text-align:center">sample</td>
+                                            <td style="font-size:14px; text-align:center">sample</td>
+                                            <td style="font-size:14px; text-align:center">sample</td>
                                             <td style="font-size:14px; text-align:center">
-                                                {{ $row->conducted_or_sponseored_by }}</td>
+                                                sample</td>
                                         </tr>
-                                    @endforeach
                                 </table>
                             </div>
                         </div>
@@ -310,13 +300,11 @@
                                         <tr>
                                             <th style="font-size:14px; text-align:center; height: 60px; max-height: 60px;">Special Skills and Hobbies</th>
                                         </tr>
-                                        @foreach ($staff_oi_special_sills_and_hobbies as $row)
                                             <tr>
                                                 <td style="font-size:14px; text-align:center">
-                                                    {{ $row->special_skills_and_hobbies }}
+                                                    sample
                                                 </td>
                                             </tr>
-                                        @endforeach
                                     </table>
                                 </div>
 
@@ -325,13 +313,11 @@
                                         <tr>
                                             <th style="font-size:14px; text-align:center;height: 60px; max-height: 60px;">Non Academic Distinction / Recognition</th>
                                         </tr>
-                                        @foreach ($staff_oi_distinction_or_recognition as $row)
                                             <tr>
                                                 <td style="font-size:14px; text-align:center">
-                                                    {{ $row->distinction_or_recognition }}
+                                                    sample
                                                 </td>
                                             </tr>
-                                        @endforeach
                                     </table>
                                 </div>
 
@@ -340,13 +326,11 @@
                                         <tr>
                                             <th style="font-size:14px; text-align:center;height: 60px; max-height: 60px;">Association / Organization</th>
                                         </tr>
-                                        @foreach ($staff_oi_association_or_organization as $row)
                                             <tr>
                                                 <td style="font-size:14px; text-align:center">
-                                                    {{ $row->association_or_organization }}
+                                                    sample
                                                 </td>
                                             </tr>
-                                        @endforeach
                                     </table>
                                 </div>
                             </div>
@@ -358,4 +342,15 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // This code will trigger the modal on page load    
+        $(document).ready(function() {
+            $('#modal_view_staff').modal('show');
+        });
+    </script>
+    
 @endsection

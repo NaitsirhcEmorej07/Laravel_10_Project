@@ -31,7 +31,7 @@ class StaffViewController extends Controller
     {
         $data = [
             'staff_main_info' => StaffModel::where('staff_id', 1)->first(),
-            // 'staff_personal_info' => StaffModelPersonalInformation::where('staff_id', 1)->first(),
+            'staff_personal_info' => StaffModelPersonalInformation::where('staff_id', 1)->first(),
             'staff_family_background' => StaffModelFamilyBackground::where('staff_id', 1)->first(),
             'staff_name_of_children' => StaffModelNameOfChildren::where('staff_id', 1)->get(),
             'staff_educational_background' => StaffModelEducationalBackground::where('staff_id', 1)->get(),

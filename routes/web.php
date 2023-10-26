@@ -19,30 +19,12 @@ use Illuminate\Support\Facades\DB;
 
 
 
-// BREZEE AUTHENTICATION 
-// Route::get('/', function () {
-//     return view('welcome');   
-// });
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
-
-// require __DIR__.'/auth.php';
-
-
 Route::get('/', function () {
-    return view('login');   
+    return view('menu_list_of_staff');   
 });
 
-// Route::get('/test', function () {
-//     return view('modal_view_staff');   
-// });
+Route::get('/modal_staff_details', function () {
+    return view('modal_view_staff');   
+});
 
-Route::get('/staff', [StaffViewController::class, 'index']);
+

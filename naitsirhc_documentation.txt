@@ -22,8 +22,8 @@ REVERSE
 //ROLLBACK PREVIOUS MIGRATIONS
 php artisan migrate:rollback 
 
-//ROLLBACK SPECIFIC MIGRATIONS
-php artisan migrate:rollback --path=database/migrations/2023_05_16_021137_tbl_unifast_staff_work_experience.php
+//ROLLBACK SPECIFIC MIGRATIONS NOTE: ROLLBACK ONLY ON PREVIOUS MIGRATIONS
+php artisan migrate:rollback --path=database/migrations/2023_05_16_021206_tbl_unifast_staff_tap_attended.php
 
 
 *SEEDERS
