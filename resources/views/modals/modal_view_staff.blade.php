@@ -20,12 +20,12 @@
             <div class="modal-body">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button style="font-size:15px" class="nav-link active fw-bold " id="nav-home-tab"
-                            data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
-                            aria-controls="nav-home" aria-selected="true">Personal Information</button>
-                        <button style="font-size:15px" class="nav-link fw-bold" id="nav-profile-tab"
-                            data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
-                            aria-controls="nav-profile" aria-selected="false">Family Background</button>
+                        <button style="font-size:15px" class="nav-link active fw-bold " id="nav-personal-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-personal" type="button" role="tab"
+                            aria-controls="nav-personal" aria-selected="true">Personal Information</button>
+                        <button style="font-size:15px" class="nav-link fw-bold" id="nav-family-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-family" type="button" role="tab"
+                            aria-controls="nav-family" aria-selected="false">Family Background</button>
                         <button style="font-size:15px" class="nav-link fw-bold" id="nav-education-tab"
                             data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab"
                             aria-controls="nav-education" aria-selected="false">Educational Background</button>
@@ -44,8 +44,8 @@
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                        aria-labelledby="nav-home-tab">
+                    <div class="tab-pane fade show active" id="nav-personal" role="tabpanel"
+                        aria-labelledby="nav-personal-tab">
                         <div class="border p-2">
                             <div class="row">
                                 <div class="col-4"><label>Date of Birth:</label></div>
@@ -126,9 +126,8 @@
                             </div>
                         </div>
 
-
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="tab-pane fade" id="nav-family" role="tabpanel" aria-labelledby="nav-family-tab">
                         <div class="border p-2">
                             <div class="row">
                                 <div class="col-4"><label>Spouse Name:</label></div>

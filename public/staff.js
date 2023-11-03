@@ -1,8 +1,8 @@
 const modal_add_staff = new bootstrap.Modal('#modal_add_staff');
 
 //function for viewing modal_staff_add
-const btn_stf_add = document.getElementById('btn_staff_add');
-btn_stf_add.onclick = function () {
+const btn_add_staff = document.getElementById('btn_staff_add');
+btn_add_staff.onclick = function () {
     modal_add_staff.show();
 }
 
