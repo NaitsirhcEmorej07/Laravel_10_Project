@@ -53,7 +53,7 @@
                     <a class="nav-link fs-6" aria-current="page" href="menu_dashboard.php"> <i
                             class="bi bi-bar-chart"></i>
                         Dashboard</a>
-                    <a class="nav-link fs-6" aria-current="page" href="/stafflist"> <i
+                    <a class="nav-link fs-6" aria-current="page" href="/staff_list"> <i
                             class="bi bi-people"></i>
                         List of Staff</a>
                     <!-- <a class="nav-link fs-6" aria-current="page" href="menu_list_of_staff.php"> <i class="bi bi-people"></i> List of Staff</a> -->
@@ -76,9 +76,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+
+     {{-- INCLUDE ALL CREATED JAVASCRIPT HERE --}}
+    <script src="{{ url('staff.js') }}"></script>
 
     <!-- ALL LINK AND SCRIPT CDN IS REQUIRED BEFORE THIS INITIALIZATION -->
     <script type="text/javascript">

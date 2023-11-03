@@ -1,9 +1,13 @@
 @extends('layouts.my_layout')
-
 @section('content')
-{{-- @include('modal_view_staff') --}}
 
-    <div class="table-responsive p-3 mt-3">
+    <div id="modals_staff_view"></div>
+
+    <div class="container-fluid d-flex justify-content-end">
+        <button class="btn btn-primary btn-sm mt-2 p-1"><i class="bi bi-person-add"></i> Add New Staff</button>
+    </div>
+
+    <div class="container-fluid table-responsive p-3 mt-3">
         <table id="staff_list_table" class="table table-striped align-middle">
             <thead>
                 <tr>
@@ -17,57 +21,28 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="font-size:14px; text-align:center">
-                        <img style="border-radius: 50%; border: 1px solid black;" class="align-self-center"
-                        src="{{ asset('multimedia/me2.png') }}" alt="" width="100" height="100">
-                    </td>
-                    <td style="font-size:15px; text-align:center">Christian Jerome Marfe Espeña</td>
-                    <td style="font-size:15px; text-align:center">Project Technical Staff I</td>
-                    <td style="font-size:15px; text-align:center">C.O.S</td>
-                    <td style="font-size:15px; text-align:center">ICT Unit</td>
-                    <td style="font-size:15px; text-align:center">Active</td>
-                    <td style="font-size:15px; text-align:center">
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal_view_staff"><i
-                                class="bi bi-eye"></i></button>
-                                
-                        <button class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></button>
-                    </td>
-                </tr>
-                <!-- <tr>
-                    <td style="font-size:14px; text-align:center">
-                        <img style="border-radius: 50%; border: 1px solid black;" class="align-self-center"
-                        src="{{ asset('multimedia/CONANAN.png') }}" alt="" width="100" height="100">
-                    </td>
-                    <td style="font-size:15px; text-align:center">Ramon Jacinto Diaz Conanan</td>
-                    <td style="font-size:15px; text-align:center">Project Technical Staff II</td>
-                    <td style="font-size:15px; text-align:center">C.O.S</td>
-                    <td style="font-size:15px; text-align:center">ICT Unit</td>
-                    <td style="font-size:15px; text-align:center">Active</td>
-                    <td style="font-size:15px; text-align:center">
-                        <button class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-size:14px; text-align:center">
-                        <img style="border-radius: 50%; border: 1px solid black;" class="align-self-center"
-                        src="{{ asset('multimedia/BOHOL.png') }}" alt="" width="100" height="100">
-                    </td>
-                    <td style="font-size:15px; text-align:center">Froilan Lucas Bohol</td>
-                    <td style="font-size:15px; text-align:center">Project Technical Staff I</td>
-                    <td style="font-size:15px; text-align:center">C.O.S</td>
-                    <td style="font-size:15px; text-align:center">ICT Unit</td>
-                    <td style="font-size:15px; text-align:center">Active</td>
-                    <td style="font-size:15px; text-align:center">
-                        <button class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></button>
-                    </td>
-                </tr> -->
+                @foreach ($staff_list_data as $key => $row) 
+                    <tr>
+                        <td style="font-size:15px; text-align:center">
+                            <img style="border-radius: 50%; border: 1px solid black;" class="align-self-center"
+                                src="{{ asset('multimedia/me2.png') }}" alt="" width="100" height="100">
+                        </td>
+                        <td style="font-size:15px; text-align:center">{{ $row->first_name }} {{ $row->middle_name }}
+                            {{ $row->last_name }}</td>
+                        <td style="font-size:15px; text-align:center">{{ $row->designation }}</td>
+                        <td style="font-size:15px; text-align:center">{{ $row->employment_type }}</td>
+                        <td style="font-size:15px; text-align:center">{{ $row->unit }}</td>
+                        <td style="font-size:15px; text-align:center">{{ $row->status }}</td>
+                        <td style="font-size:15px; text-align:center">
+                            <button id="btn_stf_{{ $key }}" value={{ $row->staff_id }}
+                                class="btn btn-primary btn-sm btn_stf"><i class="bi bi-eye"></i></button>
+
+                            <button class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></button>
+                        </td>
+                    </tr>
+                @endforeach
+
             </tbody>
         </table>
     </div>
-
-   
-
 @endsection

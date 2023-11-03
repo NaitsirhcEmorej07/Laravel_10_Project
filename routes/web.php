@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\StaffViewController;
+
+
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\StaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +20,12 @@ use Illuminate\Support\Facades\DB;
 
 
 
-Route::get('/', function () {
-    return view('menu_list_of_staff');   
-});
+// Route::get('/', function () {
+//     return view('menu_list_of_staff');   
+// });
 
-Route::get('/modal_staff_details', function () {
-    return view('modal_view_staff');   
-});
+Route::get('/', [StaffController::class, 'index']);
 
+Route::get('/staff_list', [StaffController::class, 'index']);
 
+Route::get('/staff_info/{staff_id}', [StaffController::class, 'get_staff_info']);
