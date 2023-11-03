@@ -19,13 +19,10 @@ use App\Http\Controllers\StaffController;
 */
 
 
-
-// Route::get('/', function () {
-//     return view('menu_list_of_staff');   
-// });
-
 Route::get('/', [StaffController::class, 'index']);
 
 Route::get('/staff_list', [StaffController::class, 'index']);
 
 Route::get('/staff_info/{staff_id}', [StaffController::class, 'get_staff_info']);
+
+Route::get('/staff_add', [StaffController::class, 'get_staff_add']);

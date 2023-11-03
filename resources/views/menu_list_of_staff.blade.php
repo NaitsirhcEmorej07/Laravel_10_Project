@@ -1,10 +1,12 @@
 @extends('layouts.my_layout')
 @section('content')
+    @include('modals.modal_add_staff')
+    <div id="modals_view_staff"></div>
 
-    <div id="modals_staff_view"></div>
 
     <div class="container-fluid d-flex justify-content-end">
-        <button class="btn btn-primary btn-sm mt-2 p-1"><i class="bi bi-person-add"></i> Add New Staff</button>
+        <button id="btn_staff_add" class="btn btn-primary btn-sm mt-2 p-1"><i class="bi bi-person-add"></i> Add New
+            Staff</button>
     </div>
 
     <div class="container-fluid table-responsive p-3 mt-3">
@@ -21,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($staff_list_data as $key => $row) 
+                @foreach ($staff_list_data as $key => $row)
                     <tr>
                         <td style="font-size:15px; text-align:center">
                             <img style="border-radius: 50%; border: 1px solid black;" class="align-self-center"

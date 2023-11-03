@@ -47,5 +47,13 @@ class StaffController extends Controller
         // echo json_encode($data);
         return view('modals.modal_view_staff', $data);
     }
+
+
+    public function get_staff_add()
+    {
+        return view('modals.modal_add_staff');   
+    }
+
+    
 }
 

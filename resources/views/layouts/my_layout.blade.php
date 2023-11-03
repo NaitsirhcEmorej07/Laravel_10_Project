@@ -21,9 +21,6 @@
 </head>
 
 <body>
-    
-    {{-- @include("modal_view_staff") --}}
-
     <style>
         .navbar {
             background-color: #3b5998 !important;
