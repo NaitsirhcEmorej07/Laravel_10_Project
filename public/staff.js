@@ -1,5 +1,10 @@
 const modal_add_staff = new bootstrap.Modal('#modal_add_staff');
 
+//function for viewing modal_staff_add
+const btn_stf_add = document.getElementById('btn_staff_add');
+btn_stf_add.onclick = function () {
+    modal_add_staff.show();
+}
 
 //function for get_staff_info
 const btn_stf = document.querySelectorAll('.btn_stf');
@@ -17,15 +22,5 @@ async function fetch_staff_modal(staff_id) {
     const response = await fetch('/staff_info/' + staff_id);
     return response.text();
 }
-
-
-//function for viewing modal_staff_add
-const btn_stf_add = document.getElementById('btn_staff_add');
-btn_stf_add.onclick = function () {
-    modal_add_staff.show();
-}
-
-
-
 
 
